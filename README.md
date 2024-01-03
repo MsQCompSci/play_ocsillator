@@ -7,7 +7,10 @@ play a p5.Oscillator object
 2. Install Node.js in your project folder on your computer by following the steps in [Getting Started with Node.js]("https://docs.google.com/document/d/1n6Je0Lzht2ibQmN1st1ccth47ppNhIYtMBTOwNAAFdo/edit")
 3. Install express and create a package.json file in your project folder by typing the following command in the terminal and pressing enter: `npm init -y`
 4. Install Express.js by typing `npm install express` in the melody-app project folder in the terminal
-Your package.json should look something like this:
+   
+Your package.json file should look something like this:
+
+<code>
 {
   "name": "melody-app",
   "version": "1.0.0",
@@ -24,6 +27,7 @@ Your package.json should look something like this:
     "express": "^4.18.2"
   }
 }
+</code>
 
 Note: A package.lock.json file and node_modules may appear in your project folder when you install or update a library using npm
 
@@ -33,7 +37,6 @@ Note: A package.lock.json file and node_modules may appear in your project folde
 
 `<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>`
 
----------------
 ## Step 2 - Use an Oscillator to Play a Sound
 
 ### About Sound Waves
