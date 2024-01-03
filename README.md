@@ -57,19 +57,19 @@ let freq = 262;</code>
 3. In setup() initialize `osc` with an oscillator object that uses the middle C note frequency. 
 
 <code>//create oscillator object
-osc = new p5.Oscillator(freq);<code>
+osc = new p5.Oscillator(freq);</code>
 
 4. Define mousePressed() and mouseReleased() to control when the oscillator's starts and stops, respectively.
 
 <code>//start sound when mouse is pressed
 function mousePressed() {
   osc.start();
-}<code>
+}</code>
 
 <code>//stop sound when mouse button is released
 function mouseReleased() {
   osc.stop();
-}<code>
+}</code>
 
 5. Check your browser settings are not muted by default then test the oscillator. You shoud hear middle C playing when your mouse button is pressed down:
    - After checking your settings, run the sketch.
@@ -80,11 +80,11 @@ function mouseReleased() {
   - Set initial settings to center and resize text with instructions in setup(): 
   <code>//set text size and alignment
   textAlign(CENTER, CENTER);
-  textSize(30);<code>
+  textSize(30);</code>
 
   - Add text with instructions in draw():
   <code>//instructions
- text("Hold down the\n mouse button\n to play Middle C", 200,100);<code>
+ text("Hold down the\n mouse button\n to play Middle C", 200,100);</code>
 
 7. Display the oscillator's frequency in Hz on the canvas.
    - Check if the oscillator is playing:
@@ -92,7 +92,7 @@ function mouseReleased() {
 
   <code> if (osc.started === true) { //check if osc is playing
       //save frequency of sound
-      let freq = osc.getFreq();<code>
+      let freq = osc.getFreq();
 
       //display frequency
       text(`${freq} Hz`, width / 2, height / 2);
