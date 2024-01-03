@@ -46,7 +46,7 @@ Sound is a form of energy that travels by creating periodic waves through the ai
 
 1. Create a global variable named `osc` which will store a p5.Oscillator object.
 
-`//variable for oscillator`
+`//variable for oscillator
 let osc;`
 
 2. Define a global variable called freq and initialize it with 262. 262 is the frequency, in Hz, for the middle C note. 
