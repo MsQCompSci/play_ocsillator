@@ -10,8 +10,7 @@ play a p5.Oscillator object
    
 Your package.json file should look something like this:
 
-<code>
-{
+<code>{
   "name": "melody-app",
   "version": "1.0.0",
   "description": "",
@@ -26,8 +25,7 @@ Your package.json file should look something like this:
   "dependencies": {
     "express": "^4.18.2"
   }
-}
-</code>
+}</code>
 
 Note: A package.lock.json file and node_modules may appear in your project folder when you install or update a library using npm
 
