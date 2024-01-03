@@ -47,30 +47,29 @@ Sound is a form of energy that travels by creating periodic waves through the ai
 1. Create a global variable named `osc` which will store a p5.Oscillator object.
 
 <code>//variable for oscillator
-let osc;
-</code>
+let osc;</code>
 
 2. Define a global variable called freq and initialize it with 262. 262 is the frequency, in Hz, for the middle C note. 
 
-`//variable for frequency
-let freq = 262;`
+<code>//variable for frequency
+let freq = 262;</code>
 
 3. In setup() initialize `osc` with an oscillator object that uses the middle C note frequency. 
 
-`//create oscillator object
-osc = new p5.Oscillator(freq);`
+<code>//create oscillator object
+osc = new p5.Oscillator(freq);<code>
 
 4. Define mousePressed() and mouseReleased() to control when the oscillator's starts and stops, respectively.
 
-`//start sound when mouse is pressed
+<code>//start sound when mouse is pressed
 function mousePressed() {
   osc.start();
-}`
+}<code>
 
-`//stop sound when mouse button is released
+<code>//stop sound when mouse button is released
 function mouseReleased() {
   osc.stop();
-}`
+}<code>
 
 5. Check your browser settings are not muted by default then test the oscillator. You shoud hear middle C playing when your mouse button is pressed down:
    - After checking your settings, run the sketch.
@@ -79,13 +78,13 @@ function mouseReleased() {
 
 6. Place instructions on the canvas to remind the user how to interact with it:
   - Set initial settings to center and resize text with instructions in setup(): 
-  `//set text size and alignment
+  <code>//set text size and alignment
   textAlign(CENTER, CENTER);
-  textSize(30);`
+  textSize(30);<code>
 
   - Add text with instructions in draw():
-  `//instructions
- text("Hold down the\n mouse button\n to play Middle C", 200,100);`
+  <code>//instructions
+ text("Hold down the\n mouse button\n to play Middle C", 200,100);<code>
 
 7. Display the oscillator's frequency in Hz on the canvas.
    - Check if the oscillator is playing:
@@ -93,7 +92,7 @@ function mouseReleased() {
 
   <code> if (osc.started === true) { //check if osc is playing
       //save frequency of sound
-      let freq = osc.getFreq();`
+      let freq = osc.getFreq();<code>
 
       //display frequency
       text(`${freq} Hz`, width / 2, height / 2);
