@@ -90,14 +90,12 @@ function mouseReleased() {
    - Check if the oscillator is playing:
    - If it is add text to display the frequency of the sound; if not display 0Hz.
 
-  <code> 
-  if (osc.started === true) { //check if osc is playing
+  <code> if (osc.started === true) { //check if osc is playing
       //save frequency of sound
       let freq = osc.getFreq(); 
   </code>
        
-   <code>
-      //display frequency
+   <code>//display frequency
       text(freq + 'Hz', width / 2, height / 2);
     } else {
       text('0 Hz', width / 2, height / 2);
