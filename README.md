@@ -95,7 +95,7 @@ function mouseReleased() {
       let freq = osc.getFreq();
 
       //display frequency
-      text(`${freq} Hz`, width / 2, height / 2);
+      text(freq + 'Hz', width / 2, height / 2);
     } else {
       text('0 Hz', width / 2, height / 2);
     }</code>
