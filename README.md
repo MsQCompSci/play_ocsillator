@@ -75,12 +75,14 @@ function mouseReleased() {
    - Release the button to stop the note.
 
 6. Place instructions on the canvas to remind the user how to interact with it:
-  - Set initial settings to center and resize text with instructions in setup(): 
+  - Set initial settings to center and resize text with instructions in setup():
+    
   <code>//set text size and alignment
   textAlign(CENTER, CENTER);
   textSize(30);</code>
 
   - Add text with instructions in draw():
+    
   <code>//instructions
  text("Hold down the\n mouse button\n to play Middle C", 200,100);</code>
 
@@ -91,11 +93,14 @@ function mouseReleased() {
   <code> 
   if (osc.started === true) { //check if osc is playing
       //save frequency of sound
-      let freq = osc.getFreq(); </code>
-     
-    <code> //display frequency
+      let freq = osc.getFreq(); 
+  </code>
+       
+   <code>
+      //display frequency
       text(freq + 'Hz', width / 2, height / 2);
     } else {
       text('0 Hz', width / 2, height / 2);
-    }</code>
+    } 
+   </code>
 
